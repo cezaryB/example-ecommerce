@@ -19,7 +19,7 @@ const useFetch = url => {
           setError(config.DATA_ERROR);
       }
     }, 2000);
-  }, []);
+  }, [url]);
 
   return { data, error };
 }
